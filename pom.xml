@@ -40,6 +40,12 @@
             <scope>test</scope>
         </dependency>
 
+<!--        mail-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
+
 <!--        DataBase support-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
