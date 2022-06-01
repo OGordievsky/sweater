@@ -57,6 +57,12 @@
             <scope>runtime</scope>
         </dependency>
 
+<!--        Flyway migrate db-->
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+        </dependency>
+
 <!--        Spring security-->
 
         <dependency>
