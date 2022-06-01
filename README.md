@@ -1,2 +1,4 @@
 # sweater
-Spring Boot chat application
+Spring Boot project
+
+Application for posting notes
