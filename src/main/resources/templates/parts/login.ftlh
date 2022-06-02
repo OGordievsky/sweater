@@ -31,11 +31,11 @@
                 <label class="col-sm-2 col-form-label"> Retype password: </label>
                 <div class="col-sm-6">
                     <input type="password" name="password2"
-                           class="form-control ${(passwordError??)?string('is-invalid', '')}"
+                           class="form-control ${(password2Error??)?string('is-invalid', '')}"
                            placeholder="Retype password"/>
-                    <#if passwordError??>
+                    <#if password2Error??>
                         <div class="invalid-feedback">
-                            ${passwordError}
+                            ${password2Error}
                         </div>
                     </#if>
                 </div>
@@ -52,6 +52,14 @@
                         </div>
                     </#if>
                 </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="g-recaptcha" data-sitekey="6LdyRjogAAAAAH03zRp3AIWWFR28_JtYVx9uvqZF"></div>
+                <#if captchaError??>
+                    <div class="alert alert-danger" role="alert">
+                        ${captchaError}
+                    </div>
+                </#if>
             </div>
         </#if>
         <input type="hidden" name="_csrf" value="${_csrf.token}"/>

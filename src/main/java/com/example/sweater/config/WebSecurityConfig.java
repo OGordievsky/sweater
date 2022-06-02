@@ -31,9 +31,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                     .loginPage("/login")
                     .permitAll()
                 .and()
+                    .rememberMe()
+                .and()
                     .logout()
                     .permitAll();
-        }
+    }
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
