@@ -16,7 +16,7 @@
     </parent>
 
     <properties>
-        <java.version>17</java.version>
+        <java.version>11</java.version>
     </properties>
     <dependencies>
 <!--        Spring Boot-->
@@ -82,6 +82,22 @@
             <artifactId>spring-session-jdbc</artifactId>
         </dependency>
 
+<!--        JAXB-->
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-core</artifactId>
+            <version>3.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
+            <version>3.0.2</version>
+        </dependency>
+
 
     </dependencies>
 
@@ -90,6 +106,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.example.sweater.Application</mainClass>
+                </configuration>
             </plugin>
         </plugins>
     </build>

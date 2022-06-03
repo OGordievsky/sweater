@@ -61,9 +61,9 @@ public class UserService implements UserDetailsService {
                     "Hello, %s! \n" +
                             "Welcome to Sweater. " +
                             "If you want to register here, please visit next link: " +
-                            homeLink +
-                            "/activate/%s",
+                            "%s/activate/%s",
                     user.getUsername(),
+                    homeLink,
                     user.getActivationCode()
             );
             mailSender.send(user.getEmail(), "Activation code", message);
