@@ -53,6 +53,7 @@
                     </#if>
                 </div>
             </div>
+            <p> Для подтверждения регистрации, перейдите по ссылке в ответном почтовом сообщении.</p>
             <div class="col-sm-6">
                 <div class="g-recaptcha" data-sitekey="6LdyRjogAAAAAH03zRp3AIWWFR28_JtYVx9uvqZF"></div>
                 <#if captchaError??>

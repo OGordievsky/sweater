@@ -20,13 +20,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-
-
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                    .antMatchers("/", "/registration", "/static/**", "/activate/*").permitAll()
+                    .antMatchers("/", "/registration", "/static/**", "/activate/*", "/favicon.ico").permitAll()
                     .anyRequest().authenticated()
                 .and()
                     .formLogin()
