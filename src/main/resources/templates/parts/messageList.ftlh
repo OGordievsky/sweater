@@ -12,14 +12,11 @@
                 <i>#${message.tag}</i>
             </div>
             <div class="card-footer text-muted">
-                <a href="/user-messages/${message.author.id}">${message.authorName}</a>
-<#--                <a href="/user-messages/${message.author.id}">${message.id}</a>-->
+                <a href="/user-messages/${message.author.id?string.computer}">${message.authorName}</a>
                 <#if message.author.id == currentUserId>
                     <a class="btn btn-primary" href="/user-messages/${message.author.id?string.computer}?message=${message.id?string.computer}">Edit</a>
                 </#if>
             </div>
         </div>
-    <#--        <#else>-->
-    <#--        No message-->
     </#list>
 </div>
