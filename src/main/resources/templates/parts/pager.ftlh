@@ -7,7 +7,6 @@
         tail = (pageNumber < totalPages -3)?then([-1, totalPages], [totalPages - 2, totalPages - 1, totalPages])
         bodyBefore = ((pageNumber > 4) && (pageNumber < totalPages - 1))?then([pageNumber - 2, pageNumber - 1], [])
         bodyAfter = ((pageNumber > 2) && (pageNumber < totalPages - 3))?then([pageNumber + 1, pageNumber + 2], [])
-
         body = head + bodyBefore + ((pageNumber > 3) && (pageNumber < totalPages - 2))?then([pageNumber], []) + bodyAfter + tail
         >
     <#else>
@@ -29,7 +28,7 @@
                     </li>
                 <#else>
                     <li class="page-item">
-                        <a class="page-link" href="${url}?page=${p - 1}&size=${page.getSize()}" tabindex="-1"> ${p} </a>
+                        <a class="page-link" href="${url}?page=${p - 1}&amp;size=${page.getSize()}" tabindex="-1"> ${p} </a>
                     </li>
                 </#if>
             </#list>
@@ -46,7 +45,7 @@
                     </li>
                 <#else>
                     <li class="page-item">
-                        <a class="page-link" href="${url}?page=${page.getNumber()}&size=${e}" tabindex="-1"> ${e} </a>
+                        <a class="page-link" href="${url}?page=${page.getNumber()}&amp;size=${e}" tabindex="-1"> ${e} </a>
                     </li>
                 </#if>
             </#list>

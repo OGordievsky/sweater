@@ -11,10 +11,9 @@
             <br/>
             <br/>Сейчас опубликовано:
             <a href="https://github.com/OGordievsky/sweater">Sweater</a> (клон твиттера)
-            <br/> приложение находится в стадии разработки и исправления ошибок.
             <br/>
             <br/> Используются следующие технологии: Spring-Boot 2.0; Spring-Security; Spring-mail; Postgresql;
-            Freemarker; reCaptcha; Bootstrap; Flyway.
+            Freemarker; reCaptcha; Bootstrap; Flyway; JUnit 4.
             <br/> Можно попробовать зарегистрироваться, <a href="https://temp-mail.org"> используя временную почту</a>,
             нажав кнопку <a href="/login">Login</a>, посмотреть или оставить сообщения <a href="/main">Messages</a>.
             <br/> Возможно у Вас возникнут трудности с регистрацией или с прохождением проверки Google reCaptcha,
