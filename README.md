@@ -31,7 +31,7 @@ database name: <code>sweater</code> with user: <code>sweater_user</code> passwor
 <br/>3. Open you favorite IDE
 <br/>4. In yours IDE make next steps: <code>File</code> -> <code>Open</code> -> <code>:\projects\sweater</code>
 <br/>5. Find main class "Application.java" into: sweater/src/main/java/com/example/sweater/
-<br/>6. Right click on ShowFTextApp.java select [Run] (green "Play" triangle)
+<br/>6. Right click on Application.java select [Run] (green "Play" triangle)
 <br/>7. In your brother type: <a href="http://localhost:8080/sweater">localhost:8080/sweater</a>
 <br/>
 <br/>Enjoy to use
